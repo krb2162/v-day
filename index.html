@@ -1,0 +1,134 @@
+
+<!-- saved from url=(0045)file:///Users/kathryn/Desktop/more_stuff.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<style>
+
+/* Static state */
+#container  { 
+ 
+  position: relative; 
+  border: 1px solid #ccc; 
+}
+.parent1  { 
+  /* overall animation container */
+  height: 0; 
+  overflow: hidden;
+
+  transition-property: height;
+  transition-duration: 1s;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+}
+.parent2  { 
+  /* full content during animation *can* go here */ 
+}
+.parent3  { 
+  /* animated, "folded" block */
+  height: 56px; 
+  transition-property: all; 
+  transition-duration: 1s;
+  transform: rotateX(-90deg);
+  transform-origin: top; 
+}
+
+/* Hover states to trigger animations */
+#container:hover .parent1 { 
+  height: 100%;
+}
+#container:hover .parent3 {
+  transform: rotateX(0deg); 
+  height: 111px; 
+}
+.image_container {
+  position: relative;
+  margin-left: 31%;
+  margin-bottom: 2%;
+}
+
+h1{
+   margin-top: 2%;
+  text-align: center;
+  font-size: 50px;
+  color: pink;
+  font-family: 'Brush Script MT', cursive;
+  text-shadow:2px 2px 0 #B22222,
+  -2px -2px 0 #B22222,
+  2px -2px 0 #B22222,
+  -2px 2px 0 #B22222,
+  0px 2px 0 #B22222,
+  2px 0px 0 #B22222,
+  0px -2px 0 #B22222,
+  -2px 0px 0 #B22222,
+  2px 2px 5px #B22222;
+
+}
+
+
+.upperleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+.lowerleft{
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+
+}
+
+.studtext{
+    font-size: 40px;
+  color: white;
+    font-family: impact;
+    text-shadow:2px 2px 0 #B22222,
+    -2px -2px 0 #B22222,
+    2px -2px 0 #B22222,
+    -2px 2px 0 #B22222,
+    0px 2px 0 #B22222,
+    2px 0px 0 #B22222,
+    0px -2px 0 #B22222,
+    -2px 0px 0 #B22222,
+    2px 2px 5px #B22222;
+}
+
+.background_container{
+  background-color: black;
+  border-style: dotted;
+  border-color: red;
+  border-width: 40px;
+}
+
+img { 
+  width: 700px;
+  height: auto;
+}
+
+</style>
+
+</head>
+<body>
+    <div id="container">
+      <div class="wrapper">
+  <h1 contenteditable="" data-heading="Folded">Open</h1>
+</div>
+      <div class="parent1">
+
+        <div class="parent2">
+          <div class="parent3">
+            <!-- Content goes here -->
+            <div class="background_container">
+              <h1> Happy Valentine's Day </h1>
+            <div class="image_container">
+              <img src="./more_stuff_files/SBSP-VD-HSGG_Viacom_SpongeBob_TriblendT-shirt_NL6010_Black_RO_600x.jpg" alt="Cinque Terre" width="1000" height="300">
+              <div class="upperleft studtext">Hey STUD,</div>
+              <div class="lowerleft studtext"> Wanna be my Valentine?</div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</body></html>
